@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This file contains the layout information
+
+As in Java, class names can be fully-qualified (including the package name),
+or they can be imported using the "import" processing instruction (PI)
+
+We need to import the required library that we are going to use:
+-->
+
+<!-- the following PI imports the javafx.scene.control.Insets class into the current FXML document’s namespace: -->
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<!--
+By default, IJ uses VBox for vertical layout box
+child nodes will be arranged in a vertical column
+All the code must be included inside the VBox element
+
+<fx:include>
+<fx:constant>
+<fx:reference>
+<fx:copy>
+<fx:root>
+ -->
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.demo1.HelloController">
+    <!-- The box has some padding inside of it -->
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <!-- 
+        a label with id "WelcomeText" 
+
+        fx:id attribute is used to reference any FXML element in java controller
+    -->
+    <Label fx:id="welcomeText"/>
+    <!--
+    button with two attributes:
+    - a text to be displayed as the label/title inside the button
+    - the action to be run on click using # symbol then a method named "onHelloButtonClick"
+    this button will call the method "onHelloButtonClick" inside the HelloController.java
+    when it's clicked
+    -->
+    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+</VBox>
