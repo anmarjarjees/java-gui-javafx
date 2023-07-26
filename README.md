@@ -116,7 +116,7 @@ All JavaFX applications share the same basic skeleton. When using IntelliJ with 
 - .java => The Controller file
 - .java => The Application file
 
-# JavaFx_Demo1 with Visual Studio Code Editor:
+# JavaFx_Demo1 with Visual Studio Code Editor "javafx_demo1":
 1- Creating a new Java project => CTRL + SHIFT + P
 2- Select "JavaFX" from the dropdown list
 3- Enter com.introduction (e.g. com.example)
@@ -226,6 +226,28 @@ Creating an application named "demo2":
 You can follow the same steps from "demo1"
 - Starting with the "View" => hello-view.fxml
 - Adding an event to the button => Using the "Controller" => HelloController.java
+
+# GuessNumber Application with IntelliJ IDEA IDE
+To guess the lucky number between 1 and 10
+
+1. Start a new project
+![New Project Setup for "GuessNumber"](repo-img/JavaFX7-GuessNumber1.jpg)
+
+2. Also select the minimum need for this demonstration/example which is the "ControllerFX"
+![ControllerFX option for a new JavaFX project](repo-img/javaFX2.jpg)
+
+3. The initial workspace with the default code of the three files:
+    - HelloApplication.java (Right-Click class name => Refactor => Rename => GuessNumberApp)
+    - HelloController.java (Right-Click class name => Refactor => Rename =>GuessNumberController)
+    - hello-view.fxml:
+        - If you rename the .fxml file, you will need to modify the code also
+        - IJ will prompt you to change the code if you rename this file
+            - You can choose either "Do Refactor" or "Cancel"
+    - The package name will be "com.example.guessnumber":
+        ```java
+        package com.example.guessnumber;
+        ```
+![GuessNumber Workspace](repo-img/JavaFX8-GuessNumber2.jpg)
 
 # Credits, References, Tools and Recourses:
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/)
