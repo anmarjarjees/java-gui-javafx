@@ -56,7 +56,7 @@ The JavaFX UI controls available through the JavaFX API are built by using nodes
 JavaFX has several layout panes (as we practiced using Swing), examples:
 - The **BorderPane** class lays out its content nodes in the top, bottom, right, left, or center region.
 - The **HBox class** arranges its content nodes horizontally in a single row.
-- The **VBox class** arranges its content nodes vertically in a single column.
+- The **VBox class** arranges its content nodes vertically in a single column (Good for menus or list of items).
 - The **StackPane** class places its content nodes in a back-to-front single stack.
 - The **GridPane** class enables the developer to create a flexible grid of rows and columns in which to lay out content nodes.
 - The **FlowPane** class arranges its content nodes in either a horizontal or vertical ”flow,” wrapping at the specified width (for horizontal) or height (for vertical) boundaries.
@@ -234,7 +234,7 @@ To guess the lucky number between 1 and 10
 ![New Project Setup for "GuessNumber"](repo-img/JavaFX7-GuessNumber1.jpg)
 
 2. Also select the minimum need for this demonstration/example which is the "ControllerFX"
-![ControllerFX option for a new JavaFX project](repo-img/javaFX2.jpg)
+![ControllerFX option for a new JavaFX project](repo-img/JavaFX2.jpg)
 
 3. The initial workspace with the default code of the three files:
     - HelloApplication.java (Right-Click class name => Refactor => Rename => GuessNumberApp)
