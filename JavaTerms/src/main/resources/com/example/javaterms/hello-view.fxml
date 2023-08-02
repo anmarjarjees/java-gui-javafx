@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+
+<?import javafx.scene.control.ToggleGroup?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.javaterms.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <!--
+        We need to define the toggle group object for the radio button
+        As one radio button should be selected at time
+        link: https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/ToggleGroup.html
+
+        Using the general element "define" to define any class,
+        in our case is the "ToggleGroup"
+        this class has to be imported also
+     -->
+    <fx:define>
+        <!--
+            In between <define> => define your object:
+        -->
+        <ToggleGroup fx:id="terms"/>
+    </fx:define>
+
+    <VBox>
+        <Label text="Java Terms"/>
+        <!--
+        Adding the attribute "toggleGroup" to reference the defined ToggleGroup class "Terms"
+        To reference we need to use $
+         -->
+        <RadioButton text="JDK" fx:id="jdk" toggleGroup="$terms" selected="true"/>
+        <RadioButton text="JRE" fx:id="jre" toggleGroup="$terms"/>
+        <RadioButton text="JVM" fx:id="jvm" toggleGroup="$terms"/>
+    </VBox>
+    <Label fx:id="welcomeText"/>
+    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+
+</VBox>

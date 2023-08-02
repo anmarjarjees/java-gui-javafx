@@ -1,3 +1,10 @@
+<!-- 
+    First line is the xml doc type: version and encoding 
+    Notice that these are the default values for Java
+    If you remove this line Java will assume the same:
+    - version="1.0" 
+    - encoding="UTF-8"
+-->
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 This file contains the layout information
@@ -10,6 +17,12 @@ We need to import the required library that we are going to use:
 
 <!-- the following PI imports the javafx.scene.control.Insets class into the current FXML document’s namespace: -->
 <?import javafx.geometry.Insets?>
+<!-- 
+    Importing the class "Label" from "javafx.scene.control":
+    > javafx.scene.control.Label 
+    We can also use the wildcard * to import all the classes:
+    > javafx.scene.control.*
+ -->
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
@@ -24,6 +37,9 @@ All the code must be included inside the VBox element
 <fx:reference>
 <fx:copy>
 <fx:root>
+
+As with HTML, XML elements have attributes also: alignment, spacing
+Every .fxml file can have only one controller: "com.example.demo1.HelloController"
  -->
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.example.demo1.HelloController">

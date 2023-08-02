@@ -249,6 +249,9 @@ To guess the lucky number between 1 and 10
         ```
 ![GuessNumber Workspace](repo-img/JavaFX8-GuessNumber2.jpg)
 
+# JavaTerm Application with IntelliJ IDEA IDE
+Has the essential code to work with Radio button with simple console output. The full complete application to be completed by the students.
+
 # Credits, References, Tools and Recourses:
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 - [Java How to Program, 11/e By by Paul Deitel and Harvey Deitel](https://deitel.com/java-how-to-program-11-e-early-objects-version/)
