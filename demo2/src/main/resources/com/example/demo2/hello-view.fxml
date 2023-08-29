@@ -40,6 +40,8 @@
 
         give it an id of "txtCourse" => the text field for the label Name
         as we will use this id value to target this node as we do with JS DOM :-)
+
+        NOTE: Any element that we need to target => we give it an id
         -->
         <TextField fx:id="txtCourse"/>
     </HBox>
@@ -48,7 +50,11 @@
     <Button text="Hello!" onAction="#onHelloButtonClick"/>
 
     <!--
-    Adding our other custom code below:
+    Adding our other custom code (elements) below:
+    **********************************************
+    - Label
+    - Button
+
     This <label /> element will be targeted by the controller based on its id "lblCourse"
     to display the user input that we will receive from the text field
     -->

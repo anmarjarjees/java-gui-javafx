@@ -5,9 +5,11 @@
 <?import javafx.scene.layout.VBox?>
 
 <?import javafx.scene.control.Button?>
-<!--
-The default contents (Layout) using VBox:
--->
+
+<!-- Using The * for all the control classes: Label and Button -->
+<!-- <?import javafx.scene.control.*?> -->
+
+<!-- Default project contents/code (Layout) => using VBox: -->
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.HBox?>
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
@@ -30,7 +32,7 @@ The default contents (Layout) using VBox:
     but it has "fx:id" attribute as we will target it in our controller
     to display the message/result/answer
     -->
-    <Label fx:id="lblOutputMsg"/>
+    <Label fx:id="lblResult"/>
 
     <!-- We can keep the same default method name: -->
     <Button text="Submit your number" onAction="#onHelloButtonClick"/>

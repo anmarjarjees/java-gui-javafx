@@ -39,15 +39,15 @@ public class HelloController {
 
         String term = obj.getText();
         // testing:
-        System.out.println("Selected Term: "+term);
+        System.out.println("Selected Term: " + term);
 
         /*
-        Using two different ways to get the selected radio button:
-        */
+         * Using two different ways to get the selected radio button:
+         */
 
         if (term.equals("JDK")) {
             System.out.println("JDK: Java Development Kit");
-        } else if (term.equals("JRE")){
+        } else if (term.equals("JRE")) {
             System.out.println("JRE: Java Runtime Environment");
         } else {
             System.out.println("JVM: Java Virtual Machine");
@@ -56,9 +56,9 @@ public class HelloController {
         // OR:
         if (jdk.isSelected()) {
             System.out.println("JDK (Java Development Kit)");
-        } else if (jre.isSelected()){
+        } else if (jre.isSelected()) {
             System.out.println("JRE (Java Runtime Environment)");
-        } else if (jvm.isSelected()){
+        } else if (jvm.isSelected()) {
             System.out.println("JVM (Java Virtual Machine)");
         }
     }

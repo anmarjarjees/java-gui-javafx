@@ -14,16 +14,17 @@ public class HelloController {
     private Label welcomeText;
 
     /*
-    Adding our custom field for the text field in the view:
-    following the same pattern of IntelliJ
-
-    Our FXML file "hello-view.fxml" has: <TextField fx:id="txtCourse"/>
-
-    this private field "txtCourse" will create a reference to our FXML object:
-    the text field element "<TextField /> with the id of "txtCourse"
-
-    Notice that we are using "TextField" and "Label", so we have to import them from "javafx.scene.control"
-    */
+     * Adding our custom field for the text field in the view:
+     * following the same pattern of IntelliJ
+     * 
+     * Our FXML file "hello-view.fxml" has: <TextField fx:id="txtCourse"/>
+     * 
+     * this private field "txtCourse" will create a reference to our FXML object:
+     * the text field element "<TextField /> with the id of "txtCourse"
+     * 
+     * Notice that we are using "TextField" and "Label", so we have to import them
+     * from "javafx.scene.control"
+     */
     @FXML
     private TextField txtCourse;
 
@@ -31,19 +32,32 @@ public class HelloController {
     @FXML
     private Label lblCourse;
 
-    // "onHelloButtonClick" is the original template code that we can comment/omit if you like:
+    // "onHelloButtonClick" is the original template code that we can comment/omit
+    // if you like:
     @FXML
     protected void onHelloButtonClick() {
+        // keep this
         welcomeText.setText("Welcome to JavaFX Application!");
     }
 
     /*
-    Adding our custom method to control the text field in the view:
-    following the same pattern of IntelliJ
-    */
+     * Adding our custom method to control the text field in the view:
+     * following the same pattern of IntelliJ
+     */
     @FXML
     protected void OnCourseButtonClick() {
-        lblCourse.setText("Your course is "+ txtCourse.getText());
+        // add our code:
+        // testing:
+        System.out.println("Button is clicked");
+
+        // getting the user input
+        String courseName = txtCourse.getText();
+
+        // output the user's input into a label
+        lblCourse.setText("Your course is " + courseName);
+
+        // Or Just in one line:
+        // lblCourse.setText("Your course is " + txtCourse.getText());
     }
 
 }
